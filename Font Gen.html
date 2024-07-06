@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Font Generator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/.png" rel="icon">
+  <link href="assets/img/.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     <!-- <h1 class="logo"><a href="index.html">Mr Tool.pk</a></h1> --->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!--<li><a class="nav-link scrollto" href="#services"></a></li> ---->
+         <!-- <li><a class="nav-link scrollto o" href="#portfolio">Portfolio</a></li> ----->
+          <!--<li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> --->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Password Gen.html">Paswoord Generator</a></li>
+              <li><a href="Font Gen.html">Font Generator</a></li>
+              <li><a href="QR Code Gen.html">Qr Code generator</a></li>
+              <li><a href="#">Form Generator</a></li>
+              <li><a href="#">Resume Generator</a></li>
+              <li class="dropdown"><a href="#"><span>Temp Mail Generator</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">.org</a></li>
+                  <li><a href="#">.net</a></li>
+                  <li><a href="#">.com</a></li>
+                  <li><a href="#">.pk</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <!---  <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class=" d-flex justify-content-between align-items-center" style="padding-top: 10px;">
+          <h2></h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Font Generator</li>
+          </ol>
+        </div>
+
+      </div>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .font-preview {
+      font-size: 36px;
+      margin-bottom: 200px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="width: 50%;
+  align-items: center; justify-content: center; background-image: linear-gradient( #A6C0FE 10%, #88D3CE 100%); border-radius: 10px;">
+    <h1 class="text-center mt-5 mb-4">Font Generator</h1>
+    <div class="form-group row">
+      <label for="font-select" class="col-sm-2 col-form-label">Select a font:</label>
+      <div class="col-sm-10">
+        <select class="form-control" id="font-select">
+          <option value="Arial">Arial</option>
+          <option value="Calibri">Calibri</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Impact">Impact</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Webdings">Webdings</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="font-text" class="col-sm-2 col-form-label">Enter text:</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="font-text" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Preview:</label>
+      <div class="col-sm-10">
+        <div id="font-preview" class="font-preview"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    $(function() {
+      var fontSelect = $('#font-select');
+      var fontPreview = $('#font-preview');
+      var fontText = $('#font-text');
+
+      fontSelect.on('change', function() {
+        fontPreview.css('font-family', fontSelect.val());
+      });
+
+      fontText.on('input', function() {
+        fontPreview.text(fontText.val());
+      });
+    });
+  </script>
+</body>
+</html>
+
+    </section><!-- End Breadcrumbs -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Mr Tool.PK</h3>
+            <p>
+             Sarwar Shaheed Rd, Model Town, Bahawalpur, Punjab, Pakistan <br><br>
+              <strong>Phone:</strong> +92 313 6985095<br>
+              <strong>Email:</strong> MrTool.pk.com <br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Other Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>However, if there are many people who do not know what I read, then I will read our great fault</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Mr Tool.PK</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="#">NewEND Develpers </a>
+
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

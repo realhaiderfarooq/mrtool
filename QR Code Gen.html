@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Qr Code Generator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/.png" rel="icon">
+  <link href="assets/img/.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        .containerr{
+            width: 400px;
+            height: 520px;
+            margin: auto;
+            margin-top: 60px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+            font-family: Louize;
+            background: #cccccc;
+        }
+        .header{
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 100%;
+        }
+        .header>div{
+            line-height: 60px;
+            color: white;
+            font-size: 35px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .text-field{
+            padding: 10px;
+            font-size: 16px;
+            outline: none;
+            border: 1px solid #d8d8d8;
+            margin: 10px 20px;
+            width: calc(100% - 60px);
+            font-family: 'Montserrat', sans-serif;
+
+        }
+        .mode{
+            margin-left: -16px;
+            display: inline-block;
+        }
+        .mode li{
+            list-style: none;
+            display: inline-block;
+            font-size: 12px;
+            background-color: #F0F0F1;
+            padding: 4px;
+            cursor: pointer;
+            margin-left: -4px;
+            transition-duration: .1s;
+        }
+        .mode .active{
+            background-color: #5059dced;
+            color: white;
+            line-height: 22px;
+            border-radius: 4px;
+        }
+        .gen{
+            float: right;
+            padding: 10px 20px;
+            background-color: #5059dced;
+            color: white;
+            border: 0px;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 13px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        label{
+            margin-left: 16px;
+            font-size: 12px;
+            user-select: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        label span{
+            position: relative;
+            top: -2px;
+        }
+        .upload{
+            position: relative;
+            top: -2px;
+            font-size: 12px;
+            color: #3641de;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .upload:hover{
+            text-decoration: underline;
+        }
+        .file-selector{
+            display: none;
+        }
+        .qr-container{
+            width: 100%;
+            height: 280px;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            display: -webkit-box;
+        }
+        .download{
+            font-size: 13px;
+            margin-left: 20px;
+        }
+        .download li{
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+            color: #3641de;
+            margin-left: 5px;
+        }
+        .download li:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     <!-- <h1 class="logo"><a href="index.html">Mr Tool.pk</a></h1> --->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="assets/img/logo1.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!--<li><a class="nav-link scrollto" href="#services"></a></li> ---->
+         <!-- <li><a class="nav-link scrollto o" href="#portfolio">Portfolio</a></li> ----->
+          <!--<li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> --->
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Password Gen.html">Paswoord Generator</a></li>
+              <li><a href="Font Gen.html">Font Generator</a></li>
+              <li><a href="QR Code Gen.html">Qr Code generator</a></li>
+              <li><a href="#">Form Generator</a></li>
+              <li><a href="#">Resume Generator</a></li>
+              <li class="dropdown"><a href="#"><span>Temp Mail Generator</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">.org</a></li>
+                  <li><a href="#">.net</a></li>
+                  <li><a href="#">.com</a></li>
+                  <li><a href="#">.pk</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <!---  <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class=" d-flex justify-content-between align-items-center" style="padding-top: 10px;">
+          <h2></h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Qr Code Generator</li>
+          </ol>
+        </div>
+
+      </div>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Generator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .font-preview {
+      font-size: 36px;
+      margin-bottom: 200px;
+
+    }
+  </style>
+</head>
+<body>
+   <div class="containerr">
+        <div class="header">
+            <div>QR Code Generator</div>
+        </div>
+        <input type="text" placeholder="Enter link or add some text" class="text-field">
+        <ul class="mode">
+            <li>Basic</li>
+            <li class="active">Medium</li>
+            <li>Advance</li>
+        </ul>
+        <button class="gen">Generate</button>
+        <br>
+        <label>
+            <input type="checkbox" class="checkbox">
+            <span>Add Logo</span>
+        </label>
+        <div class="upload">Custom logo</div>
+        <input type="file" class="file-selector" accept=".png, .jpg, .jpeg, .svg">
+        <div class="qr-container">Qr Code</div>
+        <div class="download">
+            <span>Download: </span>
+            <li>PNG</li>
+            <li>JPG</li>
+        </div>
+    </div>
+<script src="qr-code-styling.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+    </section><!-- End Breadcrumbs -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Mr Tool.PK</h3>
+            <p>
+             Sarwar Shaheed Rd, Model Town, Bahawalpur, Punjab, Pakistan <br><br>
+              <strong>Phone:</strong> +92 313 6985095<br>
+              <strong>Email:</strong> MrTool.pk.com <br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Other Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>However, if there are many people who do not know what I read, then I will read our great fault</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Mr Tool.PK</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+          Designed by <a href="#">NewEND Develpers </a>
+
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
